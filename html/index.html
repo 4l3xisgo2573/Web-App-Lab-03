@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Login & Signup Forms</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js"></script>
+  </head>
+
+<body>
+    <center>
+        <p class="myText">Welcome Screen</p>
+        <button onclick="mylogin()">Login Form</button>
+        <button onclick="mysignup()">Signup Form</button>
+    </center>
+
+    <div id="loginForm" class="login-div" style="display:none">
+        <div class="form-container">
+            <label for="userid">UserID:</label>
+            <input type="text" name="userid" id="userid">
+
+            <label for="pwd">Password:</label>
+            <input type="password" name="pwd" id="pwd">
+
+            <button class = "b2">Next Page</button>
+        </div>
+    </div>
+
+    <div id="signupForm" class="sign-div" style="display:none">
+        <div class="form-container">
+          <div class ="onerow">
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname">
+          </div>
+            
+          <div class ="onerow">
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname">
+          </div>
+            
+          <div class ="onerow">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob">
+          </div>
+            
+          <div class ="onerow">
+            <label>Gender:</label>
+            <div id = "genderOption">
+              <input type="radio" name="gender_signup" id="gender_male" value="Male">
+            <label for="gender_male">Male</label>
+            <input type="radio" name="gender_signup" id="gender_female" value="Female">
+            <label for="gender_female">Female</label>
+            </div>
+          </div>
+            
+            
+
+            <button class = "b2">Next Page</button>
+        </div>
+    </div>
+</body>
+
+</html>
